@@ -164,8 +164,10 @@ public class Review {
   
   //Write your totalSentiment method here. This method should return the total
   //sentiment value of a review based on an input review
-  public static double totalSentiment(String reviewText)
+  public static double totalSentiment(String fileName)
   {
+      String reviewText = textToString(fileName);
+      
       String[] words = reviewText.split(" ");
       double totalSentiment = 0;
       for (int i = 0; i < words.length; i++)
@@ -180,9 +182,9 @@ public class Review {
   
   //Write your starRating method here. This method should return an int rating from 0-4 based on the total
   //sentiment value of a review.
-  public static int starRating(String reviewText)
+  public static int starRating(String fileName)
   {
-      double sentiment = totalSentiment(reviewText);
+      double sentiment = totalSentiment(fileName);
       if (sentiment < -10)
       {
           return 0;

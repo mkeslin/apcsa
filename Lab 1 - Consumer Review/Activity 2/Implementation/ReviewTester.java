@@ -4,13 +4,13 @@ public class ReviewTester
     {
         Review review = new Review();
         
-        String reviewText = "This was a terrible restaurant! The pizza crust was too chewy, and I disliked the pasta. I would definitely not come back.";
-        // String reviewText = "Oppenheimer marks another engrossing achievement from Christopher Nolan that benefits from Murphy's tour-de-force performance and stunning visuals.";
+        // String fileName = "simpleReview.txt";
+        String fileName = "oppenheimerReview.txt";
         
-        double totalSentiment = review.totalSentiment(reviewText);
+        double totalSentiment = review.totalSentiment(fileName);
         System.out.println(totalSentiment);
         
-        double starRating = review.starRating(reviewText);
+        double starRating = review.starRating(fileName);
         System.out.println(starRating);
     }
 }
