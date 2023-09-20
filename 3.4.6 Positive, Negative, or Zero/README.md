@@ -5,5 +5,7 @@ Use an if-else if- else to determine if the number is positive, negative, or zer
 Once you determine a number is not positive and not negative, that leaves one case left – the number must equal zero!
 
 If it is positive, print “The number is positive!”
+
 If it is negative, print “The number is negative!”
+
 If it is zero, print “The number is neither positive nor negative!”
