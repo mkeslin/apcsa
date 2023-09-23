@@ -1,0 +1,1 @@
+Run this program first to see what it does. Then rewrite the program so it uses a ```for``` loop instead of a ```while``` loop.
